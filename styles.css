@@ -1,0 +1,182 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #f5f5f5; /* Light text for dark background */
+    background-color: #121212; /* Dark background */
+}
+
+a {
+    text-decoration: none;
+    color: #76c7ff; /* Soft blue for links */
+}
+
+a:hover {
+    color: #4a9edb;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1e1e; /* Darker header background */
+    padding: 20px;
+    border-bottom: 1px solid #333; /* Subtle border for separation */
+}
+
+header .logo h1 {
+    font-size: 24px;
+    margin: 0;
+    color: #f5f5f5;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li a {
+    color: #f5f5f5;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #282828; /* Dark hero section background */
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #e6e6e6; /* Slightly softer white for headings */
+}
+
+.hero p {
+    color: #bdbdbd; /* Subtle gray for text */
+}
+
+.hero .cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #76c7ff;
+    color: #121212; /* Dark text for contrast */
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.hero .cta-button:hover {
+    background-color: #4a9edb;
+}
+
+/* About Section */
+.about {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #1e1e1e; /* Match header background */
+}
+
+.about img.rat-image {
+    width: 150px;
+    margin-top: 20px;
+    border-radius: 50%;
+    border: 3px solid #76c7ff; /* Highlighted border for image */
+}
+
+/* Games Section */
+/* Games Section */
+.games {
+    padding: 40px 20px;
+    background-color: #252525; /* Darker gray for contrast */
+    display: flex; /* Enable flexbox */
+    flex-direction: column; /* Stack the heading and items vertically */
+    align-items: center; /* Center the items horizontally */
+    justify-content: center; /* Center the content vertically (if needed) */
+}
+
+.games h2 {
+    color: #e6e6e6;
+    margin-bottom: 20px; /* Add space below the heading */
+}
+
+/* Game List */
+.games .game-list {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the game items horizontally */
+    gap: 20px; /* Space between the items */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    align-items: flex-start; /* Align items at the top */
+    width: 100%; /* Take full width of the container */
+    max-width: 1200px; /* Optional: Limit the max width of the game list */
+}
+
+/* Game Item */
+.games .game-item {
+    text-align: center;
+    max-width: 300px;
+    background-color: #1e1e1e; /* Background for the game card */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow */
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center-aligns content */
+    justify-content: flex-start; /* Keep content aligned at the top */
+}
+
+/* Image */
+.games .game-image {
+    height: 200px; /* Fixed height for all image areas */
+    width: 100%; /* Full width of the card */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden; /* Ensures the image doesn't overflow */
+    background-color: #333; /* Placeholder color for missing images */
+}
+
+.games .game-image img {
+    max-height: 100%; /* Image scales to fit height */
+    max-width: 100%; /* Image scales to fit width */
+    object-fit: cover; /* Ensures proper cropping */
+}
+
+/* Game Content */
+.games .game-content {
+    margin-top: 10px; /* Space between the image and the content */
+}
+
+.games .game-content h3 {
+    margin: 10px 0 5px;
+    color: #f5f5f5;
+}
+
+.games .game-content p {
+    color: #bdbdbd;
+    text-align: left;
+}
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+    color: #bdbdbd;
+}
+
+.footer a {
+    color: #76c7ff;
+}
+
+.footer a:hover {
+    color: #4a9edb;
+}
