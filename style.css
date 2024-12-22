@@ -22,23 +22,15 @@ h1, h2, h3, h4, h5 {
 }
 
 h1 {
-    font-size: 72px;
-}
-
-h2 {
     font-size: 64px;
 }
 
-h3 {
+h2 {
     font-size: 48px;
 }
 
-h4 {
+h3 {
     font-size: 32px;
-}
-
-h5 {
-    font-size: 28px;
 }
 
 p {
@@ -93,7 +85,6 @@ header {
 }
 
 footer {
-    margin-top: 200px;
     text-align: center;
 }
 
@@ -102,7 +93,45 @@ footer {
     width: 600px;
     margin: 0 auto; /* Centers the element horizontally */
     text-align: justify; /* Justifies the text */
-  }
+}
+
+/* For smaller screens, adjust the width to 100% */
+@media (max-width: 768px) {
+    .centered-justified {
+        width: 90%; /* Use 90% width for better responsiveness */
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+}
+
+/* For very small screens (mobile devices), adjust the width further */
+@media (max-width: 480px) {
+    .centered-justified {
+        width: 100%; /* Take up full width on smaller screens */
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+    
+    h2 {
+        font-size: 32px;
+    }
+}
 
 /* TOOLTIPS */
 
