@@ -15,7 +15,30 @@
     font-display: swap;
 }
 
-h1, h2, h3, h4, h5 {
+@font-face {
+    font-family: "Quintet";
+    src: url('/fonts/Quintet.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "SixteenPixelMSDOSBitmapFontIII";
+    src: url('/fonts/SixteenPixelMSDOSBitmapFontIII.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+a h1 {
+    line-height: 1;
+    font-family: 'SixteenPixelMSDOSBitmapFontIII';
+    font-weight: normal;
+    text-decoration: none;
+}
+
+h2, h3, h4, h5 {
     line-height: 1;
     font-family: 'Born2bSportyV2';
     font-weight: normal;
@@ -37,6 +60,13 @@ p {
     font-family: "TimesNewPixel";
     font-size: 24px;
     font-weight: normal;
+}
+
+ul {
+    font-family: "TimesNewPixel";
+    font-size: 24px;
+    font-weight: normal;
+    text-align: left;
 }
 
 a {
@@ -71,6 +101,10 @@ a {
     opacity: 0.5;
 }
 
+a.no-underline {
+    text-decoration: none;
+}
+
 
 body {
     background-color: black;
@@ -87,6 +121,7 @@ header {
 footer {
     text-align: center;
 }
+
 
 
 .centered-justified {
@@ -112,6 +147,10 @@ footer {
     h2 {
         font-size: 32px;
     }
+
+    ul {
+        font-size: 16px;
+    }
 }
 
 /* For very small screens (mobile devices), adjust the width further */
@@ -130,6 +169,10 @@ footer {
     
     h2 {
         font-size: 32px;
+    }
+
+    ul {
+        font-size: 16px;
     }
 }
 
@@ -178,4 +221,33 @@ footer {
     border-width: 5px;
     border-style: solid;
     border-color: white transparent transparent transparent;
+}
+
+/* COLORS */
+.green:hover, .yellow:hover, .blue:hover {
+    color: white;
+}
+
+.green {
+    color: lime;
+}
+
+.green:visited {
+    color: greenyellow;
+}
+
+.blue {
+    color: mediumturquoise;
+}
+
+.blue:visited {
+    color: cadetblue; 
+}
+
+.yellow {
+    color: yellow;
+}
+
+.yellow:visited {
+    color: orange;
 }
