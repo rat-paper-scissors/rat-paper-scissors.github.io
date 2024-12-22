@@ -1,0 +1,157 @@
+
+@font-face {
+    font-family: "Born2bSportyV2";
+    src: url('/fonts/born2bsportyv2.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "TimesNewPixel";
+    src: url('/fonts/TimesNewPixel.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+h1, h2, h3, h4, h5 {
+    color: var(--headerText);
+    font-weight: bold;
+    line-height: 1;
+    font-family: 'Born2bSportyV2';
+    color: var(--headerText);
+    font-weight: 100;
+    -webkit-font-smoothing: subpixel-antialiased;
+    text-wrap: balance;
+}
+
+h1 {
+    font-size: 72px;
+}
+
+h2 {
+    font-size: 64px;
+}
+
+h3 {
+    font-size: 48px;
+}
+
+h4 {
+    font-size: 32px;
+}
+
+h5 {
+    font-size: 28px;
+}
+
+p {
+    font-family: "TimesNewPixel";
+    font-size: 24px;
+    font-weight: normal;
+}
+
+a {
+    color: white;
+}
+
+.pixel-font {
+    -webkit-font-smoothing: none;
+    -moz-osx-font-smoothing: grayscale;
+    font-smooth: none;
+}
+
+.pixelated_image {
+    image-rendering: pixelated;
+}
+
+.scale-2 {
+    -moz-transform: scale(2);
+    -ms-transform: scale(2);
+    -o-transform: scale(2);
+    -webkit-transform: scale(2);
+    transform: scale(2);
+    display: inline-block;
+    margin: 10px;
+}
+
+.logo {
+    margin-top: 60px;
+}
+
+.disabled-img {
+    opacity: 0.5;
+}
+
+
+body {
+    background-color: black;
+    color: white;
+    image-rendering: pixelated;
+    -webkit-font-smoothing: none;
+    filter: contrast(1);
+}
+
+header {
+    text-align: center;
+}
+
+footer {
+    margin-top: 200px;
+    text-align: center;
+}
+
+
+.centered-justified {
+    width: 600px;
+    margin: 0 auto; /* Centers the element horizontally */
+    text-align: justify; /* Justifies the text */
+  }
+
+/* TOOLTIPS */
+
+/* Tooltip container */
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+    font-family: "TimesNewPixel";
+    font-size: 24px;
+    visibility: hidden;
+    width: 260px;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 5px 0;
+   
+    /* Position the tooltip text - see examples below! */
+    position: absolute;
+    z-index: 1;
+    bottom: 100%;
+    left: 50%;
+    margin-left: -100px; /* Use half of the width (120/2 = 60), to center the tooltip */
+
+    opacity: 0;
+    transition: opacity 1s;
+}
+  
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: white transparent transparent transparent;
+}

@@ -4,78 +4,69 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rat Paper Scissors is a solo indie game development studio founded by pkostic">
+    <meta property="og:title" content="A Basic HTML5 Template">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.ratpaperscissors.com">
+    <meta property="og:description" content="Rat Paper Scissors is a solo indie game development studio founded by pkostic.">
+    <meta property="og:image" content="img/logo/og_cover.png">
+    <meta name="author" content="pkostic">
     <title>Rat Paper Scissors</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="/img/rps.svg">
+    <link rel="icon" type="image/svg+xml" href="/img/rps.svg">
+    <link rel="icon" href="/img/rps.ico">
+    <!--<link rel="apple-touch-icon" href="/apple-touch-icon.png">-->
+    <link rel="preload" href="fonts/Born2bSportyV2.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
+    <link rel="preload" href="fonts/TimesNewPixel.woff2" type="font/woff2" as="font" crossorigin="anonymous"/>
 </head>
 
 <body>
     <header>
-        <div class="logo">
-            <h1>Rat Paper Scissors</h1>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#games">Games</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <img class="pixelated_image scale-2 logo" src="img/logo/rat_paper_scissors_logo_64_black_outlined_transparent.png">
+        <h1>Rat Paper Scissors</h1>
     </header>
 
-    <section class="hero">
-        <h2>Welcome to Rat Paper Scissors</h2>
-        <p>Developing games in Godot, fueled by cheese.</p>
-        <a href="#games" class="cta-button">Discover My Projects</a>
-    </section>
-
-    <section id="about" class="about">
-        <h2>About</h2>
-        <p>Rat Paper Scissors is an "indie game studio", but technically it is a hobby of one single rat.</p>
-        <img src="img/nikolett-emmert-6psIlD5l0fM-unsplash_smol.jpg" alt="Cute rat illustration" class="rat-image">
-    </section>
-
-    <section id="games" class="games">
-        <h2>My Projects</h2>
-        <div class="game-list">
-            <div class="game-item">
-                <div class="game-image">
-                    <img src="img/knight_screenshot_27_11_2024.png" alt="Placeholder rat">
-                </div>
-                <div class="game-content">
-                    <h3>KNIGHT</h3>
-                    <h4>Working title</h4>
-                    <p>A 2D action platformer. Currently in the prototyping stages.</p>
-                </div>
-            </div>
-            <div class="game-item">
-                <div class="game-image">
-                    <img src="img/RATS_screenshot_27_11_2024.png" alt="Placeholder rat">
-                </div>
-                <div class="game-content">
-                    <h3>R.A.T.S.</h3>
-                    <h4>On hiatus</h4>
-                    <p>A multiplayer strategy games about managing troops and conquering territories.</p>
-                </div>
-            </div>
-            <div class="game-item">
-                <div class="game-image">
-                    <img src="img/Peace_Vilalge_Screenshot 2024-11-27 005121.png" alt="Placeholder rat">
-                </div>
-                <div class="game-content">
-                    <h3>Peace Village</h3>
-                    <h4>On hiatus</h4>
-                    <p>A horror game.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer id="contact" class="footer">
-        <p>Currently unavailable for contacting.</p>
-        <p>Follow me on social media:
-            <a href="https://mastodon.gamedev.place/@pkostic">Mastodon</a> | <a
-                href="https://bsky.app/profile/pkostic.bsky.social">Bluesky</a>
+    <section class="centered-justified">
+        <h3>About</h2>
+        <p>
+            Rat Paper Scissors is a solo indie game development studio founded by pkostic (check out my socials below!). By day, I have a full-time job, but in my spare time, I pursue my passion for making games under this name.
         </p>
+        <p>
+            I hold a Master's degree in Accessibility-related technology and a Bachelor's degree in Computer Science with a minor in game programming. My development toolkit includes <a href=https://godotengine.org/>Godot</a> a for game creation and <a href="https://www.aseprite.org/">Aseprite</a> and <a href="https://www.gimp.org/">GIMP</a> for image editing. As a big fan of <a href="https://en.wikipedia.org/wiki/Free_and_open-source_software">FOSS</a>, I incorporate open-source tools wherever I can. And yes, I also have a fondness for rats.
+        </p>
+    </section>
+    <section class="centered-justified">
+        <h3>Projects</h2>
+        <p>
+            I am currently working on multiple projects, but focusing on a 2D platformer game.
+        </p>
+    </section>
+
+    <footer>
+        <a class="tooltip" href="https://discord.gg/AHD4AqEM4m">
+            <span class="tooltiptext">Discord - Rat Olympics</span>
+            <img class="pixelated_image scale-2" src="img/socials/discord.png"/>
+        </a>
+        <a class="tooltip" href="https://bsky.app/profile/ratpaperscissors.com">
+            <span class="tooltiptext">BlueSky - ratpaperscissors</span>
+            <img class="pixelated_image scale-2" src="img/socials/bsky.png"/>
+        </a>
+        <a class="tooltip" href="https://mastodon.gamedev.place/@pkostic">
+            <span class="tooltiptext">Mastodon - pkostic</span>
+            <img class="pixelated_image scale-2" src="img/socials/mastodon.png"/>
+        </a>
+        <a class="tooltip" href="https://x.com/p_kostic">
+            <span class="tooltiptext">Twitter/X - p_kostic</span>
+            <img class="pixelated_image scale-2" src="img/socials/twitter.png"/>
+        </a>
+        <img class="pixelated_image scale-2 disabled-img" src="img/socials/instagram.png"/>
+        
+        <img class="pixelated_image scale-2 disabled-img" src="img/socials/threads.png"/>
+        
+        <img class="pixelated_image scale-2 disabled-img" src="img/socials/youtube.png"/>
+        <p>© 2024 - Rat Paper Scissors - All Rights Reserved.</p>
+        
     </footer>
 </body>
 
